@@ -1,0 +1,139 @@
+<!-- 5. Create a page using div tag and CSS properties and also apply Media Queries on it to make it responsive. (B) -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Page using Div Tag</title>
+  <style>
+    /* ===== Global Styles ===== */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background-color: #f4f4f4;
+    }
+
+    /* ===== Header Section ===== */
+    .header {
+      background-color: #007acc;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+
+    /* ===== Navigation Section ===== */
+    .nav {
+      background-color: #333;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      color: white;
+      padding: 14px 20px;
+      text-decoration: none;
+      display: block;
+    }
+
+    .nav a:hover {
+      background-color: #575757;
+    }
+
+    /* ===== Content Section ===== */
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 10px;
+    }
+
+    .sidebar {
+      flex: 30%;
+      background: white;
+      padding: 20px;
+      box-sizing: border-box;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin: 10px;
+    }
+
+    .main {
+      flex: 65%;
+      background: white;
+      padding: 20px;
+      box-sizing: border-box;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      margin: 10px;
+    }
+
+    /* ===== Footer Section ===== */
+    .footer {
+      background-color: #007acc;
+      color: white;
+      text-align: center;
+      padding: 10px;
+    }
+
+    /* ===== Media Queries for Responsiveness ===== */
+    @media (max-width: 900px) {
+      .sidebar {
+        flex: 100%;
+      }
+      .main {
+        flex: 100%;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .nav {
+        flex-direction: column;
+      }
+      .nav a {
+        text-align: center;
+        padding: 10px;
+        border-top: 1px solid #444;
+      }
+      .container {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header Section -->
+  <div class="header">
+    <h1>My Responsive Webpage</h1>
+    <p>Created using DIV tags, CSS, and Media Queries</p>
+  </div>
+
+  <!-- Navigation Menu -->
+  <div class="nav">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Projects</a>
+    <a href="#">Contact</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="container">
+    <div class="sidebar">
+      <h2>Sidebar</h2>
+      <p>This is the sidebar section. It contains additional information, links, or ads.</p>
+    </div>
+
+    <div class="main">
+      <h2>Main Content</h2>
+      <p>This is the main content area. It adjusts automatically to screen sizes.</p>
+      <p>Resize the browser window to see how the layout changes with media queries.</p>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <div class="footer">
+    <p>© 2025 Responsive Webpage | Designed by Aniruddh Parmar</p>
+  </div>
+
+</body>
+</html>

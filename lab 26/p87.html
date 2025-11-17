@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="out"></p>
+
+<script>
+let students = ["Amit", "Rohan", "Neha", "Priya"];
+
+let text = "";
+
+// forEach → print each student
+students.forEach(name => {
+    text += name + "<br>";
+});
+
+document.getElementById("out").innerHTML = text;
+</script>
+
+</body>
+</html>

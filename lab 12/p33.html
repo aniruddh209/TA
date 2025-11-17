@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Data Format Validation</title>
+</head>
+<body>
+  <h2>Data Format Validation</h2>
+
+  <form onsubmit="return validateData()">
+    Email: <input type="text" id="email"><br><br>
+    Phone: <input type="text" id="phone"><br><br>
+    <input type="submit" value="Validate">
+  </form>
+
+  <script>
+    function validateData() {
+      let email = document.getElementById("email").value;
+      let phone = document.getElementById("phone").value;
+
+      let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
+      let phonePattern = /^[0-9]{10}$/;
+
+      if (!email.match(emailPattern)) {
+        alert("Invalid Email Format!");
+        return false;
+      }
+      if (!phone.match(phonePattern)) {
+        alert("Invalid Phone Number! Must be 10 digits.");
+        return false;
+      }
+
+      alert("All data formats are valid!");
+      return true;
+    }
+  </script>
+</body>
+</html>

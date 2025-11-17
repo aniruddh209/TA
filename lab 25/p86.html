@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>CRUD on Array</h3>
+<p id="out"></p>
+
+<script>
+let fruits = ["Apple", "Banana", "Mango"];  
+
+// CREATE → Insert new item
+fruits.push("Orange");
+
+// READ → Display array (no change)
+let readData = fruits.join(", ");
+
+// UPDATE → Change Banana → Kiwi
+fruits[1] = "Kiwi";
+
+// DELETE → Remove Mango
+fruits.splice(2, 1); // index 2 remove 1 item
+
+document.getElementById("out").innerHTML =
+    "After CREATE: Apple, Banana, Mango, Orange<br>" +
+    "READ: " + readData + "<br>" +
+    "After UPDATE: " + fruits + "<br>" +
+    "After DELETE: " + fruits;
+</script>
+
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Pop-up Boxes Example</title>
+<script>
+  function showPopups() {
+    // Alert Box
+    alert("This is an Alert Box!");
+
+    // Confirm Box
+    let confirmResult = confirm("Do you want to continue?");
+    if (confirmResult) {
+      // Prompt Box
+      let name = prompt("Enter your name:");
+      alert("Hello, " + name + "! Welcome!");
+    } else {
+      alert("You cancelled the operation.");
+    }
+  }
+</script>
+</head>
+<body>
+<h2>Example of Pop-up Boxes</h2>
+<button onclick="showPopups()">Show Pop-ups</button>
+</body>
+</html>

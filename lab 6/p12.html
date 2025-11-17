@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inbuilt String Functions</title>
+</head>
+
+<body>
+  <h2>JavaScript String Functions Example</h2>
+
+  <script>
+    let text = "  Hello JavaScript World!  ";
+
+    document.write("<b>Original String:</b> '" + text + "'<br><br>");
+    document.write("charAt(6): " + text.charAt(6) + "<br>");
+    document.write("charCodeAt(6): " + text.charCodeAt(6) + "<br>");
+    document.write("startsWith('Hello'): " + text.trim().startsWith("Hello") + "<br>");
+    document.write("endsWith('World!'): " + text.trim().endsWith("World!") + "<br>");
+    document.write("includes('Java'): " + text.includes("Java") + "<br>");
+    document.write("indexOf('J'): " + text.indexOf("J") + "<br>");
+    document.write("lastIndexOf('l'): " + text.lastIndexOf("l") + "<br>");
+    document.write("match('World'): " + text.match("World") + "<br>");
+    document.write("repeat(2): " + text.trim().repeat(2) + "<br>");
+    document.write("replace('JavaScript', 'JS'): " + text.replace("JavaScript", "JS") + "<br>");
+    document.write("search('Script'): " + text.search("Script") + "<br>");
+    document.write("split(' '): " + text.split(" ") + "<br>");
+    document.write("substr(2, 5): " + text.substr(2, 5) + "<br>");
+    document.write("substring(2, 8): " + text.substring(2, 8) + "<br>");
+    document.write("toString(): " + text.toString() + "<br>");
+    document.write("trim(): '" + text.trim() + "'");
+  </script>
+</body>
+</html>
+<!-- Function
+Description----
+Example Output
+charAt(2)
+Character at index
+"Hi".charAt(1) → i
+
+charCodeAt(0)
+Unicode value
+"A".charCodeAt(0) → 65
+
+startsWith(“Hi”)
+Checks prefix
+true
+
+endsWith(“JS”)
+Checks suffix
+true
+
+includes(“Java”)
+Checks if contains substring
+true
+
+indexOf(“a”)
+First occurrence index
+1
+
+lastIndexOf(“a”)
+Last occurrence index
+5
+
+match(“JS”)
+Matches substring
+['JS']
+
+repeat(2)
+Repeats string
+"HiHi"
+
+replace(“Hi”,“Hey”)
+Replace substring
+"Hey"
+
+search(“Script”)
+Finds index
+4
+
+split(”,”)
+Split into array
+['A','B']
+
+substr(0,3)
+Extracts 3 chars from start
+"Hel"
+
+substring(0,4)
+Extracts between positions
+"Java"
+
+trim()
+Removes spaces
+"Hello"
+
+toString()
+Converts to string
+'123' -->

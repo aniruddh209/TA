@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>52. getElementsByName()</h2>
+
+<input type="radio" name="color" value="Red"> Red<br>
+<input type="radio" name="color" value="Blue"> Blue<br>
+<input type="radio" name="color" value="Green"> Green<br>
+
+<button onclick="showColor()">Show Selected Color</button>
+
+<p id="result"></p>
+
+<script>
+function showColor() {
+    let x = document.getElementsByName("color");
+    for (let i = 0; i < x.length; i++) {
+        if (x[i].checked) {
+            document.getElementById("result").innerHTML = "You selected: " + x[i].value;
+        }
+    }
+}
+</script>
+</body>
+</html>

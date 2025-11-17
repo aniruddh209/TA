@@ -1,0 +1,26 @@
+<!-- 18. WAP to swap values of 2 variables without using 3rd variable. (B) -->
+ 
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swap Without Third Variable</title>
+</head>
+<body>
+  <h2>Swap Two Numbers Without Third Variable</h2>
+
+  <script>
+    let a = parseInt(prompt("Enter first number (a):"));
+    let b = parseInt(prompt("Enter second number (b):"));
+
+    document.write(`Before Swapping: a = ${a}, b = ${b}<br>`);
+
+    a = a + b;
+    b = a - b;
+    a = a - b;
+
+    document.write(`After Swapping: a = ${a}, b = ${b}`);
+  </script>
+</body>
+</html>

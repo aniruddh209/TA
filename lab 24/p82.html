@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h3>Array Operations</h3>
+
+<p id="out"></p>
+
+<script>
+let arr = ["Apple", "Banana", "Mango"];
+
+// INSERT
+arr.push("Orange");
+
+// UPDATE (change Banana → Kiwi)
+arr[1] = "Kiwi";
+
+// DELETE (remove Mango)
+arr.splice(2, 1);  // index 2 remove 1 item
+
+document.getElementById("out").innerHTML =
+    "Final Array: " + arr;
+</script>
+
+</body>
+</html>

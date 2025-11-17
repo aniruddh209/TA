@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="res"></p>
+
+<script>
+var x = 10;
+let y = 20;
+
+{
+    var x = 50;   // var changes globally
+    let y = 100;  // let stays inside block
+}
+
+document.getElementById("res").innerHTML =
+    "var x = " + x + "<br>let y = " + y;
+</script>
+
+</body>
+</html>

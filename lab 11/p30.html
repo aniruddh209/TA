@@ -1,0 +1,25 @@
+<!-- udf -->
+<!DOCTYPE html>
+<html>
+<head>
+<title>User Defined Function Example</title>
+<script>
+  // User Defined Function to add two numbers
+  function addNumbers(a, b) {
+    return a + b;
+  }
+
+  function showResult() {
+    let num1 = 10;
+    let num2 = 20;
+    let sum = addNumbers(num1, num2);  // calling the function
+    document.getElementById("result").innerHTML = "Sum = " + sum;
+  }
+</script>
+</head>
+<body>
+<h2>Example of User Defined Function</h2>
+<button onclick="showResult()">Click to Add Numbers</button>
+<p id="result"></p>
+</body>
+</html>

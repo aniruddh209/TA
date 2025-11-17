@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="out"></p>
+
+<script>
+let numbers = [10, 5, 20, 3, 25];
+
+// filter → get numbers greater than 10
+let result = numbers.filter(x => x > 10);
+
+document.getElementById("out").innerHTML =
+    "Original: " + numbers + "<br>Filtered (>10): " + result;
+</script>
+
+</body>
+</html>

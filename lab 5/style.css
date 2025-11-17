@@ -1,0 +1,17 @@
+body {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3 {
+  font-family: 'Segoe UI', sans-serif;
+}
+
+section {
+  padding-top: 30px;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
