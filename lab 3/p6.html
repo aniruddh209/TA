@@ -12,24 +12,11 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>CSS3 Animation Effects</title>
-
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f5f5f5;
-      text-align: center;
-      margin-top: 50px;
-    }
-
-    h2 {
-      color: #007acc;
-    }
-
     .box {
       width: 100px;
       height: 100px;
       background-color: red;
-      margin: 50px auto;
       position: relative;
       animation-name: moveBox;
       animation-duration: 8s;
@@ -39,7 +26,6 @@
       animation-timing-function: ease-in-out;
     }
 
-    /* === Animation Keyframes === */
     @keyframes moveBox {
       0% {
         background-color: red;
@@ -68,25 +54,18 @@
       }
     }
 
-    /* Center div container */
-    .container {
-      position: relative;
+    .outer {
+      position: fixed;
       width: 300px;
       height: 300px;
-      margin: auto;
       border: 2px dashed #007acc;
       background-color: white;
-    }
+    } 
   </style>
 </head>
 <body>
-
-  <h2>CSS3 Animation Demonstration</h2>
-  <p>Animated div moves in a square path, changes color, has a 2s delay, and runs infinitely in reverse with smooth motion.</p>
-
-  <div class="container">
+<div class="outer">
     <div class="box"></div>
-  </div>
-
+</div>
 </body>
 </html>

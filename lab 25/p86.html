@@ -8,17 +8,13 @@
 <script>
 let fruits = ["Apple", "Banana", "Mango"];  
 
-// CREATE → Insert new item
 fruits.push("Orange");
 
-// READ → Display array (no change)
 let readData = fruits.join(", ");
 
-// UPDATE → Change Banana → Kiwi
 fruits[1] = "Kiwi";
 
-// DELETE → Remove Mango
-fruits.splice(2, 1); // index 2 remove 1 item
+fruits.splice(2, 1); 
 
 document.getElementById("out").innerHTML =
     "After CREATE: Apple, Banana, Mango, Orange<br>" +

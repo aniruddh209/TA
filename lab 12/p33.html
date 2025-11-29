@@ -2,36 +2,69 @@
 <html>
 <head>
   <title>Data Format Validation</title>
+  <style>
+    .error {
+      color: red;
+      font-size: 14px;
+      margin: 5px 0;
+    }
+  </style>
 </head>
 <body>
   <h2>Data Format Validation</h2>
 
   <form onsubmit="return validateData()">
-    Email: <input type="text" id="email"><br><br>
-    Phone: <input type="text" id="phone"><br><br>
+
+    Username:
+    <input type="text" id="username"><br>
+    <span id="userError" class="error"></span>
+    <br>
+
+    Email:
+    <input type="text" id="email"><br>
+    <span id="emailError" class="error"></span>
+    <br>
+
     <input type="submit" value="Validate">
   </form>
 
   <script>
     function validateData() {
-      let email = document.getElementById("email").value;
-      let phone = document.getElementById("phone").value;
+      let username = document.getElementById("username").value.trim();
+      let email = document.getElementById("email").value.trim();
 
-      let emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-      let phonePattern = /^[0-9]{10}$/;
+      let userError = document.getElementById("userError");
+      let emailError = document.getElementById("emailError");
 
-      if (!email.match(emailPattern)) {
-        alert("Invalid Email Format!");
-        return false;
+      userError.textContent = "";
+      emailError.textContent = "";
+
+      let userPattern = /^[a-zA-Z0-9]{3,15}$/;
+      let emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[A-Za-z]{2,}$/;
+
+      let valid = true;
+
+      if (username === "") {
+        userError.textContent = "Username cannot be empty.";
+        valid = false;
       }
-      if (!phone.match(phonePattern)) {
-        alert("Invalid Phone Number! Must be 10 digits.");
-        return false;
+      else if (!userPattern.test(username)) {
+        userError.textContent = "Username must be 3-15 characters (letters or numbers).";
+        valid = false;
       }
 
-      alert("All data formats are valid!");
-      return true;
+      if (email === "") {
+        emailError.textContent = "Email cannot be empty.";
+        valid = false;
+      }
+      else if (!emailPattern.test(email)) {
+        emailError.textContent = "Invalid email format.";
+        valid = false;
+      }
+
+      return valid; 
     }
   </script>
+
 </body>
 </html>
