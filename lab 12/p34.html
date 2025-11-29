@@ -14,10 +14,11 @@
   </form>
 
   <script>
-    function validateForm() {
-      let name = document.getElementById("name").value.trim();
-      let email = document.getElementById("email").value.trim();
-      let contact = document.getElementById("contact").value.trim();
+    function validateForm(e) {
+      e.preventDefault();
+      let name = document.getElementById("name").value;
+      let email = document.getElementById("email").value;
+      let contact = document.getElementById("contact").value;
 
       if (name === "") {
         alert("Name cannot be empty!");

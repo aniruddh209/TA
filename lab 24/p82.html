@@ -9,14 +9,13 @@
 <script>
 let arr = ["Apple", "Banana", "Mango"];
 
-// INSERT
+
 arr.push("Orange");
 
-// UPDATE (change Banana → Kiwi)
 arr[1] = "Kiwi";
 
-// DELETE (remove Mango)
-arr.splice(2, 1);  // index 2 remove 1 item
+
+arr.splice(2, 1); 
 
 document.getElementById("out").innerHTML =
     "Final Array: " + arr;
