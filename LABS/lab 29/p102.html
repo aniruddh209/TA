@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <style>
+        div, p { padding: 10px; margin: 10px; border: 1px solid black; }
+    </style>
+
+    <script>
+        $(function () {
+
+            $("#btnParent").click(function () {
+                $("#child").parent().css("background", "yellow");
+            });
+
+            $("#btnChildren").click(function () {
+                $("#main").children().css("background", "lightgreen");
+            });
+
+            $("#btnFind").click(function () {
+                $("#main").find("p").css("color", "blue");
+            });
+
+            $("#btnNext").click(function () {
+                $("#child").next().css("background", "pink");
+            });
+
+            $("#btnPrev").click(function () {
+                $("#child").prev().css("background", "orange");
+            });
+
+        });
+    </script>
+</head>
+<body>
+
+<div id="main">
+    <p>Paragraph 1</p>
+    <p id="child">Child Paragraph</p>
+    <p>Paragraph 3</p>
+</div>
+
+<button id="btnParent">Highlight Parent</button>
+<button id="btnChildren">Highlight Children</button>
+<button id="btnFind">Find & Highlight p</button>
+<button id="btnNext">Highlight Next</button>
+<button id="btnPrev">Highlight Previous</button>
+
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Responsive Web Page</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            font-size: 28px;
+        }
+
+        nav {
+            background: #444;
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            padding: 10px 20px;
+            display: inline-block;
+            font-size: 18px;
+        }
+        nav a:hover {
+            background: #666;
+        }
+
+        .hero {
+            background: url('https://picsum.photos/1200/400') no-repeat center/cover;
+            height: 350px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-shadow: 0 0 10px black;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        .container {
+            padding: 30px;
+            display: flex;
+            gap: 20px;
+        }
+
+        .card {
+            background: #f3f3f3;
+            padding: 20px;
+            border-radius: 10px;
+            flex: 1;
+            text-align: center;
+            font-size: 22px;
+            box-shadow: 0 0 10px #ccc;
+        }
+
+        footer {
+            background: #333;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 30px;
+        }
+
+        @media (max-width: 600px) {
+
+            nav a {
+                display: block;
+                padding: 15px;
+                border-bottom: 1px solid #555;
+            }
+
+            .container {
+                flex-direction: column;
+            }
+
+            .hero {
+                font-size: 24px;
+                height: 250px;
+            }
+        }
+
+        @media (min-width: 600px) and (max-width: 900px) {
+
+            .container {
+                flex-direction: column;
+            }
+
+            .hero {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    My Responsive Website
+</header>
+
+<nav>
+    <a href="#">Home</a>
+    <a href="#">Products</a>
+    <a href="#">About</a>
+    <a href="#">Contact</a>
+</nav>
+
+<div class="hero">
+    Welcome to Our Website!
+</div>
+
+<div class="container">
+    <div class="card">Card 1 – Description</div>
+    <div class="card">Card 2 – Description</div>
+    <div class="card">Card 3 – Description</div>
+</div>
+
+<footer>
+    © 2025 My Website | All Rights Reserved
+</footer>
+
+</body>
+</html>

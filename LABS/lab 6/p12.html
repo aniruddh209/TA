@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>String methods</title>
+</head>
+<body>
+  <script>
+    let str = " Hello JavaScript World ";
+
+// charAt()
+console.log("charAt(2):", str.charAt(2));     
+// charCodeAt()
+console.log("charCodeAt(1):", str.charCodeAt(1)); 
+// startsWith()
+console.log("startsWith('Hello'):", str.startsWith(" H"));
+
+// endsWith()
+console.log("endsWith('World  '):", str.endsWith("World  "));
+
+// includes()
+console.log("includes('JavaScript'):", str.includes("JavaScript"));
+
+// indexOf()
+console.log("indexOf('o'):", str.indexOf('o'));
+
+// lastIndexOf()
+console.log("lastIndexOf('o'):", str.lastIndexOf('o'));
+
+// match()
+console.log("match():", str.match('o')); 
+
+// repeat()
+console.log("repeat 2 times:", "2".repeat());
+
+// replace()
+console.log("replace JavaScript → JS:", str.replace("JavaScript", "JS"));
+
+// search()
+console.log("search 'World':", str.search("World"));
+
+// split()
+console.log("split by space:", str.split(" "));
+
+// substr(start, length)
+console.log("substr(2, 5):", str.substr(2, 5)); 
+
+// substring(start, end)
+console.log("substring(2, 8):", str.substring(2, 8)); 
+
+// toString()
+console.log("toString():", str.toString());
+
+// trim()
+console.log("trim():", str.trim());
+  </script>
+</body>
+</html>

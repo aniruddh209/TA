@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="out"></p>
+
+<script>
+let nums = [10, 55, 32, 80, 5, 90];
+
+// filter → only numbers > 50
+let result = nums.filter(n => n > 50);
+
+document.getElementById("out").innerHTML =
+    "Original: " + nums + "<br>Greater than 50: " + result;
+</script>
+
+</body>
+</html>

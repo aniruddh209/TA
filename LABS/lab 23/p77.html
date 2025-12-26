@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="out"></p>
+
+<script>
+// let → value can change
+let x = 10;
+
+// const → value cannot change
+const y = 20;
+
+// Arrow Function + default parameter
+let add = (a, b ) => a + b;
+
+// Template literal for string writing easy
+let msg = `Sum is: ${add(x, y)}`;
+
+// Spread operator
+let arr1 = [1, 2, 3];
+let arr2 = [...arr1, 4, 5];
+
+// Array Destructuring
+let [p, q, r] = arr2; // p=1, q=2, r=3
+
+document.getElementById("out").innerHTML =
+    msg +
+    "<br>Spread Array: " + arr2 +
+    "<br>Destructured Values: " + p + ", " + q + ", " + r;
+</script>
+
+</body>
+</html>

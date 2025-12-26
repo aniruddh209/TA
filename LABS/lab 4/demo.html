@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Table animation</title>
+
+    <style>
+      table {
+        width: 60%;
+        margin: 30px auto;
+        font-size: 20px;
+        text-align: center;
+      }
+      .box {
+        width: 300px;
+        height: 300px;
+        border: 3px solid black;
+        margin: 30px auto;
+        position: relative;
+        background: #f9f9f9;
+      }
+
+      .ball {
+        width: 40px;
+        height: 40px;
+        background: red;
+        position: absolute;
+        animation: moveBall;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+      }
+
+      @keyframes moveBall {
+        0% {
+          top: 0;
+          left: 0;
+        }
+        25% {
+          top: 0;
+          left: 260px;
+        }
+        50% {
+          top: 260px;
+          left: 260px;
+        }
+        75% {
+          top: 260px;
+          left: 0;
+        }
+        100% {
+          top: 0;
+          left: 0;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <h2 style="text-align: center">Table Format Example</h2>
+
+    <table>
+      <tr>
+        <div class="box">
+          <div class="ball"></div>
+        </div>
+      </tr>
+    </table>
+  </body>
+</html>

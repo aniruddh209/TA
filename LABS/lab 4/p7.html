@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Typography Example</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background: #f9f9f9;
+        }
+        .section-title {
+            color: #4a148c;
+            font-weight: bold;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 6px solid #4a148c;
+            padding-left: 15px;
+        }
+        img {
+            object-fit: cover;
+        }
+    </style>
+</head>
+
+<body class="p-4">
+<div class="bg-white rounded p-5">
+
+    <h2 class="section-title">1. Bootstrap Typography</h2>
+    <h1 class="display-1">Display 1 Heading</h1>
+    <h2 class="display-4 mb-3">Display 4 Heading</h2>
+    <p class="lead">This is a lead paragraph that looks bigger.</p>
+    <p class="text-muted mb-4">This is muted text.</p>
+
+    <hr>
+
+
+    <h2 class="section-title">2. Text Styling</h2>
+    <p class="fw-bold">Bold Text</p>
+    <p class="fw-semibold">Semi Bold Text</p>
+    <p class="fst-italic">Italic Text</p>
+    <p class="text-uppercase">uppercase text</p>
+    <p class="text-lowercase">LOWERCASE TEXT</p>
+    <p class="text-capitalize mb-4">this text becomes capitalized</p>
+
+    <hr>
+
+    <h2 class="section-title">3. Abbreviation</h2>
+    <p>The <abbr title="HyperText Markup Language">HTML</abbr> language is used to create webpages.</p>
+    <p>The <abbr title="World Health Organization">WHO</abbr> works for global health.</p>
+
+    <hr>
+
+    <h2 class="section-title">4. Text Alignment</h2>
+    <p class="text-start">This text is left aligned.</p>
+    <p class="text-center">This text is center aligned.</p>
+    <p class="text-end mb-4">This text is right aligned.</p>
+
+    <hr>
+
+
+    <h2 class="section-title">5. Unstyled List</h2>
+    <ul class="list-unstyled ms-3">
+        <li>• Apple</li>
+        <li>• Mango</li>
+        <li>• Banana</li>
+    </ul>
+
+    <hr>
+
+    <h2 class="section-title">6. Responsive Image + Alignment</h2>
+
+    <p class="fw-semibold">Left Aligned Image</p>
+    <img src="https://images.unsplash.com/photo-1757269267586-08a85ed238cb?w=700&auto=format&fit=crop&q=60"
+         class="img-fluid float-start rounded shadow mb-3"
+         style="height: 150px; width: 150px;">
+
+    <!-- <div class="clearfix"></div> -->
+
+    <p class="fw-semibold mt-4 text-center">Center Aligned Image</p>
+    <div class="text-center mb-4">
+        <img src="https://images.unsplash.com/photo-1761839258753-85d8eecbbc29?w=700&auto=format&fit=crop&q=60"
+             class="img-fluid rounded shadow"
+             style="height: 150px; width: 150px;">
+    </div>
+
+    <p class="fw-semibold text-end">Right Aligned Image</p>
+    <img src="https://images.unsplash.com/photo-1761839257469-96c78a7c2dd3?w=700&auto=format&fit=crop&q=60"
+         class="img-fluid float-end rounded shadow"
+         style="height: 150px; width: 150px;">
+
+    <div class="clearfix"></div>
+
+    <hr>
+
+    <!-- 7 -->
+    <h2 class="section-title">7. Thumbnail Image</h2>
+    <img src="https://images.unsplash.com/photo-1763619795609-3ac461f13b31?w=700&auto=format&fit=crop&q=60"
+         class="img-thumbnail shadow"
+         style="height: 200px; width: 200px;">
+
+</div>
+</body>
+</html>

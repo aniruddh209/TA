@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator Using Switch Case</title>
+</head>
+<body>
+  <h2>Calculator using Switch Case</h2>
+
+  <script>
+    let a = parseFloat(prompt("Enter first number:"));
+    let b = parseFloat(prompt("Enter second number:"));
+    let op = prompt("Enter operator (+, -, *, /):");
+    let result;
+
+    switch (op) {
+      case '+':
+        result = a + b;
+        break;
+      case '-':
+        result = a - b;
+        break;
+      case '*':
+        result = a * b;
+        break;
+      case '/':
+        if(b==0){
+          document.write("Invalid operation")
+        }
+        else{
+          result=a/b;
+        }
+        break;
+      default:
+        result = "Invalid Operator";
+    }
+
+    document.write(result);
+  </script>
+</body>
+</html>

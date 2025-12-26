@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+let n = 3; 
+
+// Upper part
+for (let i = 1; i <= n; i++) {
+
+  // spaces
+  for (let s = 1; s <= n - i; s++) {
+    document.write("&nbsp;&nbsp;");
+  }
+
+  // stars
+  for (let j = 1; j <= i; j++) {
+    document.write("* ");
+  }
+
+  document.write("<br>");
+}
+
+// Lower part
+for (let i = n - 1; i >= 1; i--) {
+
+  // spaces
+  for (let s = 1; s <=n - i; s++) {
+    document.write("&nbsp;&nbsp;");
+  }
+
+  // stars
+  for (let j = 1; j <= i; j++) {
+    document.write("* ");
+  }
+
+  document.write("<br>");
+}
+</script>
+
+</body>
+</html>
+
+
+
+
+

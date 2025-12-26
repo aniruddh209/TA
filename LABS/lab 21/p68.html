@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="out"></p>
+
+<script>
+// Normal function
+function add(a, b) {
+    return a + b;
+}
+
+// Arrow function
+let addArrow = (a, b) => a + b;
+
+document.getElementById("out").innerHTML =
+    "Normal: " + add(5, 5) + "<br> Arrow: " + addArrow(5, 5);
+</script>
+
+</body>
+</html>

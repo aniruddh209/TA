@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<p id="out"></p>
+
+<script>
+// join() Example
+let arr = ["Apple", "Banana", "Mango"];
+let joined = arr.join(" - "); // joins array
+
+// split()
+let str = "A-B-C-D";
+let splitted = str.split("-"); // splits string 
+
+document.getElementById("out").innerHTML =
+    "Join: " + joined + "<br>" +
+    "Split: " + splitted;
+</script>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- ⭐ join()
+	•	You have an array: ["Apple","Banana","Mango"]
+	•	join(”, “) → puts comma between them →
+"Apple, Banana, Mango"
+
+⭐ split()
+	•	You have a string: "A-B-C-D"
+	•	split(”-”) → breaks wherever “-” appears →
+["A","B","C","D"] -->

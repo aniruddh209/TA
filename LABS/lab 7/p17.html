@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <h2>Student Result & Grade</h2>
+
+    <script>
+      let s1 = Number(prompt("Enter Subject 1 marks:"));
+      let s2 = Number(prompt("Enter Subject 2 marks:"));
+      let s3 = Number(prompt("Enter Subject 3 marks:"));
+      let s4 = Number(prompt("Enter Subject 4 marks:"));
+      let s5 = Number(prompt("Enter Subject 5 marks:"));
+
+      if (s1 < 40 || s2 < 40 || s3 < 40 || s4 < 40 || s5 < 40) {
+        document.write("<b>Result:</b> FAIL<br>");
+        document.write("<b>Grade:</b> F");
+      } else {
+        let avg = (s1 + s2 + s3 + s4 + s5) / 5;
+        let grade = "";
+
+        if (avg>90) {
+          grade = "A";
+        } else if (avg > 80){
+          grade = "B";
+        } else if (avg > 70){
+          grade = "C";
+        } else if (avg > 60){
+          grade = "D";
+        } else {
+          grade = "E";
+        }
+
+        document.write("<b>Result:</b>PASS<br>");
+        document.write("<b>Average:</b> " + avg + "<br>");
+        document.write("<b>Grade:</b> " + grade);
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#btn").click(function () {
+
+
+                $("p:first").css("color", "blue");
+
+                $("p:last").css("color", "green");
+
+                $("li:even").css("background", "#ddd");
+
+                $("li:odd").css("background", "#bbb");
+
+                $("p:contains('jQuery')").css("font-size", "20px");
+            });
+        });
+    </script>
+</head>
+<body>
+
+<p>Welcome</p>
+<p>I am learning jQuery</p>
+<p>This is last paragraph</p>
+
+<ul>
+    <li>Apple</li>
+    <li>Mango</li>
+    <li>Banana</li>
+    <li>Orange</li>
+</ul>
+
+<button id="btn">Apply Custom Selectors</button>
+
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Employee Registration</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { 
+          font-family: Arial;
+          background-color:rgb(255, 255, 255);
+         }
+        table { 
+          margin: auto;
+         }
+        input { 
+          padding: 5px;
+         }
+        h2, h3 {
+           text-align: center; 
+          }
+        @media(min-width:500px) and (max-width:900px){
+            body{
+                background-color: rgb(151, 90, 90);
+            }
+        }
+    </style>
+
+</head>
+<body>
+
+<h2>Employee Registration</h2>
+
+<form>
+
+    <h3>Personal Information</h3>
+    <table>
+        <tr>
+            <td>Employee Id :</td>
+            <td><input type="text" placeholder="Enter Employee Id"></td>
+
+            <td>Employee Name :</td>
+            <td><input type="text" placeholder="Enter Employee Name"></td>
+        </tr>
+
+        <tr>
+            <td>Email :</td>
+            <td><input type="email" placeholder="Enter Email"></td>
+
+            <td>Contact No :</td>
+            <td><input type="text" placeholder="Enter Contact No"></td>
+        </tr>
+
+        <tr>
+            <td>Marital Status :</td>
+            <td colspan="3">
+                <input type="radio" name="status"> Single
+                <input type="radio" name="status"> Married
+            </td>
+        </tr>
+    </table>
+
+    <h3>Education Qualification</h3>
+    <table>
+        <tr>
+            <td>Education :</td>
+            <td><input type="text" placeholder="Enter Education Details"></td>
+
+            <td>Experience :</td>
+            <td><input type="text" placeholder="Enter Experience Details"></td>
+        </tr>
+    </table>
+
+    <h3>Job Details</h3>
+    <table>
+        <tr>
+            <td>Designation :</td>
+            <td><input type="text" placeholder="Enter Designation Details"></td>
+            <td>Job Location :</td>
+            <td><input type="text" placeholder="Enter Job Location"></td>
+        </tr>
+         </br>
+        <tr>
+            <td>Salary :</td>
+            <td><input type="text" placeholder="Enter Salary Details"></td>
+        </tr>
+    </table>
+    <center>
+        <button type="submit">Register</button>
+        </center>
+</form>
+
+</body>
+</html>

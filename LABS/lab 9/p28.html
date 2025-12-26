@@ -1,0 +1,50 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LCM of Two Numbers</title>
+</head>
+<body>
+  <h2>LCM (Least Common Multiple) of Two Numbers</h2>
+
+  <script>
+    let a = parseInt(prompt("Enter first number:"));
+    let b = parseInt(prompt("Enter second number:"));
+    let gcd;
+
+    for (let i = 1; i <= a && i <= b; i++) {
+      if (a % i === 0 && b % i === 0) {
+        gcd = i;
+      }
+    }
+
+    let lcm = (a * b) / gcd;
+    document.write(`LCM of ${a} and ${b} is: ${lcm}`);
+  </script>
+</body>
+</html> -->
+
+<!-- 2---------- -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+  let a = 5, b = 10;
+  let lcm;
+
+for (let i = 1; i <= a * b; i++) {
+  if (i % a === 0 && i % b === 0) {
+    lcm = i;
+    break;
+  }
+}
+</script>
+document.write("LCM = " + lcm);
+</body>
+</html>

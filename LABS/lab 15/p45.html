@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>45. Demonstrate shift, unshift, splice, slice, reverse</h2>
+<script>
+    let arr = [10, 20, 30, 40, 50];
+
+    arr.shift();        
+    arr.unshift(5);     
+    arr.splice(2, 1);   
+    let sliced = arr.slice(1, 3); 
+    arr.reverse();    
+
+    document.write("<b>Modified Array:</b> " + arr + "<br>");
+    document.write("<b>Sliced Part:</b> " + sliced + "<br><br>");
+</script>
+
+</body>
+</html>

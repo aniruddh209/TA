@@ -1,0 +1,70 @@
+<!-- <!DOCTYPE html>
+<html>
+<body>
+
+<script>
+  let num = parseInt(prompt("Enter a number:"));
+  let temp = num;
+  let digits = num.toString().length;
+  let sum = 0;
+
+  while (temp > 0) {
+    let digit = temp % 10;
+    sum += Math.pow(digit, digits);
+    temp = Math.floor(temp / 10);
+  }
+
+  if (sum === num) {
+    document.write(num + " is an Armstrong Number");
+  } else {
+    document.write(num + " is NOT an Armstrong Number");
+  }
+</script>
+
+</body>
+</html> -->
+
+
+<!-- 2 without using string function------->
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<script>
+  let num = parseInt(prompt("Enter a number:"));
+  let temp = num;
+  let digits = 0;
+
+  while (temp > 0) {
+    digits++;
+    temp = Math.floor(temp / 10);
+  }
+
+  temp = num;
+  let sum = 0;
+
+  // while (temp > 0) {
+  //   let digit = temp % 10;
+  //   let power = 1;
+  //   for (let i = 1; i <= digits; i++) {
+  //     power *= digit;
+  //   }
+  //   sum += power;
+  //   temp = Math.floor(temp / 10);
+  // }
+  while (temp > 0) {
+    let digit = temp % 10;
+    sum += Math.pow(digit, digits);
+    temp = Math.floor(temp / 10);
+  }
+
+  if (sum === num) {
+    document.write(num + " is an Armstrong Number");
+  } else {
+    document.write(num + " is NOT an Armstrong Number");
+  }
+</script>
+
+</body>
+</html>
